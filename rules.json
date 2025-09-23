@@ -1,0 +1,66 @@
+{
+  "providers": [
+    {
+      "name": "OpenAI",
+      "patterns": [
+        "api.openai.com/v"
+      ]
+    },
+    {
+      "name": "Anthropic",
+      "patterns": [
+        "api.anthropic.com/v"
+      ]
+    },
+    {
+      "name": "Gemini",
+      "patterns": [
+        "generativelanguage.googleapis.com"
+      ]
+    },
+    {
+      "name": "AzureOpenAI",
+      "patterns": [
+        ".openai.azure.com/openai/"
+      ]
+    },
+    {
+      "name": "Mistral",
+      "patterns": [
+        "api.mistral.ai/v1/"
+      ]
+    },
+    {
+      "name": "HuggingFace",
+      "patterns": [
+        "api-inference.huggingface.co"
+      ]
+    },
+    {
+      "name": "OpenRouter",
+      "patterns": [
+        "api.openrouter.ai"
+      ]
+    },
+    {
+      "name": "Stability",
+      "patterns": [
+        "api.stability.ai"
+      ]
+    },
+    {
+      "name": "Perplexity",
+      "patterns": [
+        "api.perplexity.ai"
+      ]
+    },
+    {
+      "name": "ChatGPT-Web",
+      "patterns": [
+        "chatgpt.com/backend-api",
+        "chat.openai.com/backend-api",
+        "ws.chatgpt.com/ws"
+      ]
+    }
+  ]
+}

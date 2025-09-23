@@ -1,0 +1,9 @@
+{
+  "grid_gco2_per_kwh": 400.0,
+  "liters_per_kwh": 0.5,
+  "energy_kwh_per_1k_tokens": {
+    "default": 0.003,
+    "large": 0.01
+  },
+  "tree_gco2_per_day": 59.726027397260275
+}
