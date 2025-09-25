@@ -127,7 +127,7 @@ def _make_icon(trees: float) -> Image.Image:
     d = ImageDraw.Draw(img)
 
     # Chunky ring (track + progress)
-    pad = int(w * 0.06)
+    pad = int(w * 0.05)
     box = [pad, pad, w - pad, h - pad]
     _chunky_arc(d, box, 0, 360, RING_BASE, width=6)
     frac = max(0.0, trees - math.floor(trees))
