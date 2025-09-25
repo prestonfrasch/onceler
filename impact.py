@@ -37,6 +37,7 @@ def pick_model_class(model_name: Optional[str]) -> str:
     return "large" if any(k in n for k in ["gpt-4", "llama-70", "sonnet", "command-r+", "mixtral-8x7"]) else "default"
 
 def estimate_impact(tokens_in: int, tokens_out: int, model_name: Optional[str] = None) -> Impact:
+    """estimates the impact of a given model's call and response"""
     cls = pick_model_class(model_name)
     per_1k = CFG["energy_kwh_per_1k_tokens"].get(cls, CFG["energy_kwh_per_1k_tokens"]["default"])
     kwh = per_1k * ((tokens_in + tokens_out) / 1000.0)
