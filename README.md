@@ -6,14 +6,19 @@
 
 ## Quick start
 1) Create venv and install deps:
-```powershell
+#any terminal
+```
 python -m venv .venv
+```
+
+```powershell
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 ```
 
 ```bash
 source ./.venv/Scripts/activate
+pip install -r requirements.txt
 ```
 
 2A) Proxy mode (recommended)
